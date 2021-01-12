@@ -125,23 +125,57 @@ $(function () {
         $('#detail-title').text(title);
         $('#detail-content').html(description);
 
-        var images = $(this).siblings('.reference-description').data('images').split(',');
-        if (images.length > 0) {
-            sliderContent = '';
-            for (var i = 0; i < images.length; ++i) {
-                sliderContent = sliderContent + '<div class="item"><img src=' + images[i] + ' alt="" class="img-fluid"></div>';
+        if ($(this).siblings('.reference-description').attr('dat-type') == 'video'){
+            var vidName = $(this).siblings('.reference-description').data('images');
+            var vidHtml = ``
+            switch(vidName){
+              case 'teaser':
+                vidHtml = `<iframe src="https://drive.google.com/file/d/1n_vkXa2NxOqZeF-akHVZANh2iLP7VtGG/preview" width="640" height="480"></iframe>`
+                break;
+              case 'tula':
+                vidHtml = `<iframe src="https://drive.google.com/file/d/1mIc1uErvvrU8bQGUw8bIB8wfX9tqbucR/preview" width="640" height="480"></iframe>`
+                break;
+              case 'chem':
+                vidHtml = `<iframe src="https://drive.google.com/file/d/1kx9qGKZYM4-KRL_DNrW1EA0NTmjQTpeu/preview" width="640" height="480"></iframe>`
+                break;
+              case 'DRRR':
+                vidHtml = `<iframe src="https://drive.google.com/file/d/1AqmmxUAnhDzCl7Ux-VHBaZwEiSuZT9hv/preview" width="640" height="480"></iframe>`
+                break;
             }
-        } else {
-            sliderContent = '';
+
+            openVideoRef(vidHtml);
+        }
+        else{
+          var images = $(this).siblings('.reference-description').data('images').split(',');
+          if (images.length > 0) {
+              sliderContent = '';
+              for (var i = 0; i < images.length; ++i) {
+                  sliderContent = sliderContent + '<div class="item"><img src=' + images[i] + ' alt="" class="img-fluid"></div>';
+              }
+          } else {
+              sliderContent = '';
+          }
+
+          openReference(sliderContent);
         }
 
-        openReference(sliderContent);
-
     });
+
+    function openVideoRef(videoContent){
+      $('#detail').slideDown();
+      $('#references-masonry').slideUp();
+
+      if (videoContent !== ''){
+        var videoContainer = $('#detail-vid')
+
+        videoContainer.html(videoContent);
+      }
+    }
 
     function openReference(sliderContent) {
         $('#detail').slideDown();
         $('#references-masonry').slideUp();
+        $('#detail-slider').css('display', 'block')
 
 
         if (sliderContent !== '') {
@@ -166,6 +200,9 @@ $(function () {
     function closeReference() {
         $('#references-masonry').slideDown();
         $('#detail').slideUp();
+
+        $('#detail-vid').html('')
+        $('#detail-slider').css('display', 'none')
     }
 
     $('#filter button, #detail .close').on('click', function () {
@@ -196,7 +233,7 @@ $(function () {
     }, {
         offset: '90%'
     });
-    
+
     $('[data-animate-hover]').hover(function () {
         $(this).css({
             opacity: 1

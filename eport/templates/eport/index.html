@@ -47,7 +47,7 @@
       </nav>
     </header>
     <!-- Intro Image-->
-    <section id="intro" style="background: url({% static 'img/home.jpg' %}) center center no-repeat; background-size: cover;" class="intro-section pb-2">
+    <section id="intro" style="background: url({% static 'img/home-pic.jpg' %}) center center no-repeat; background-size: cover;" class="intro-section pb-2">
       <div class="container text-center">
         <h1 data-animate="fadeInDown" class="text-shadow mb-5">Hello World!</h1>
         <p data-animate="slideInUp" class="h3 text-shadow text-400">I am John Juvi Q. De Villa</p>
@@ -112,7 +112,7 @@
             Other than Hitfilm, I also use the <strong>Mocha</strong> plugin to do my <strong>3D tracking</strong> and <strong>Rotoscoping</strong>.
             From time to time I also use <strong>Adobe After Effects</strong> for animations and advance VFX editing.
           </div>
-          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="{% static 'img/about.jpg' %}" alt="This is me - IT worker" class="image rounded-circle img-fluid about-img"></div>
+          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="{% static 'img/profile.jpg' %}" alt="This is me - IT worker" class="image rounded-circle img-fluid about-img"></div>
         </div>
       </div>
     </section>
@@ -124,25 +124,33 @@
         </header>
         <div class="row services text-center">
           <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><i class="fa fa-search"></i></div>
-            <h3 class="heading mb-3 text-400">Consulting</h3>
-            <p class="text-left description">On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he prevailed admitting. On adapted an as affixed limited on. Giving cousin warmly things no spring mr be abroad. Relation breeding be as repeated strictly followed margaret. One gravity son brought shyness waiting regular led ham.</p>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
             <div class="icon"><i class="fa fa-html5"></i></div>
-            <h3 class="heading mb-3 text-400">HTML coding</h3>
-            <p class="text-left description">Manor we shall merit by chief wound no or would. Oh towards between subject passage sending mention or it. Sight happy do burst fruit to woody begin at. Assurance perpetual he in oh determine as.</p>
+            <h3 class="heading mb-3 text-400">Web Development</h3>
+            <p class="text-left description">
+              Having created 2 websites, I can say that I am somewhat experienced in web design.
+              While I may still be a rookie and still need to learn a lot more things before I become exceptionally good at it,
+              I still think that as an 18 year old student I did well. I hope to learn and experience new things in the future
+              and see where my knowledge and experience in Web Development takes me.
+            </p>
           </div>
           <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><i class="fa fa-tachometer"></i></div>
-            <h3 class="heading mb-3 text-400">PHP webdelopment</h3>
-            <p class="text-left description">Rooms oh fully taken by worse do. Points afraid but may end law lasted. Was out laughter raptures returned outweigh. Luckily cheered colonel me do we attacks on highest enabled. Tried law yet style child. Bore of true of no be deal.</p>
+            <div class="icon"><i class="fa fa-android"></i></div>
+            <h3 class="heading mb-3 text-400">App Development</h3>
+            <p class="text-left description">
+              This is still quite new for me. I just recently started on creating a mobile app but hopefully like for Web Development, it becomes useful
+              and helpful for my future career. I hope to be creating lots more things in mobile and be able to incorporate advance technologies to it
+              such as Artificial Intelligence.
+            </p>
           </div>
-        </div>
-        <hr data-animate="fadeInUp">
-        <div data-animate="fadeInUp" class="text-center">
-          <p class="lead">Would you like to know more or just discuss something?</p>
-          <p><a href="#contact" class="btn btn-outline-light link-scroll">Contact me</a></p>
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fa fa-film"></i></div>
+            <h3 class="heading mb-3 text-400">Filming and Editing</h3>
+            <p class="text-left description">
+              I still have a long road to walk before I can be considered as a <strong>pro</strong> in Filming and editing. While in reality, all I lacked is more experience
+              and projects but seeing how this is mostly a hobby and something I can use in conjunction with my programming skills. Though this may be the case, I still hope
+              that this may be useful for my future tech careers.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -164,6 +172,7 @@
             <div class="row">
               <div class="col-lg-10 mx-auto"><span class="close">×</span>
                 <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                <div id="detail-vid"></div>
                 <div class="text-center">
                   <h1 id="detail-title" class="title"></h1>
                 </div>
@@ -175,17 +184,18 @@
           <div id="references-masonry" data-animate="fadeInUp">
             <div class="row">
                   <div data-category="websites" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="{% static 'img/portfolio-1.jpg' %}" alt="" class="img-fluid">
+                    <div class="reference"><a href="#"><img src="{% static 'img/store/front-store.jpg' %}" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
-                            <h3 class="h4 reference-title">Project name</h3>
-                            <p>Short project description goes here...</p>
+                            <h3 class="h4 reference-title">Online Store</h3>
+                            <p>a website created for our sari-sari store</p>
                           </div>
                         </div></a>
-                      <div data-images="{% static 'img/main-slider1.jpg' %},{% static 'img/main-slider2.jpg' %},{% static 'img/main-slider3.jpg' %}" class="sr-only reference-description">
-                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      <div dat-type="img" data-images="{% static 'img/store/store-home.png' %},{% static 'img/store/store-prod.png' %}" class="sr-only reference-description">
+                        <p>During the pandemic, me and my family had a hard time financially. We decided to buy local goods such as vegetables and seafood every Saturday then sell them off in our subdivision. At first we had to rely on Facebook groups created by the Avida Sta. Catalina Village to post our products. This made it hard and tedious to update and respond to order messages. Because of this, I decided to create a website for us to use for free.</p>
+                        <p>I desgined this website using HTML, CSS and Javascript. For my backend, the server-side, I used Python since it's the language I'm currently used to before starting web development. I also made use of bootstrap to make styling easier since it gives you CSS classes that you can easily use.</p>
+                        <p>I added basic functions for our website such as displaying the products that are available and their prices. I also implemented an account system so the users can log in and order. With this we won't be using messenger to manage orders since Messenger wasn't really built for that.</p>
+                        <p class="buttons text-center"><a href="http://thevilla.pythonanywhere.com/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="https://github.com/TheSciCoder3000/Store-App" class="btn btn-outline-primary"><i class="fa fa-download"></i> View Github Code</a></p>
                       </div>
                     </div>
                   </div>
@@ -193,89 +203,88 @@
                     <div class="reference"><a href="#"><img src="{% static 'img/portfolio-2.jpg' %}" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
-                            <h3 class="h4 reference-title">Project name 2</h3>
-                            <p>Short project description goes here...</p>
+                            <h3 class="h4 reference-title">Awards Night Teaser</h3>
+                            <p>A Teaser was created for the Awards Night in the Multimedia and Arts Club</p>
                           </div>
                         </div></a>
-                      <div data-images="{% static 'img/main-slider3.jpg' %},{% static 'img/main-slider1.jpg' %}" class="sr-only reference-description">
-                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      <div dat-type="video" data-images="teaser" class="sr-only reference-description">
+                        <p>In Grade 11, Ms. Kit assigned us to create a teaser for the upcoming awards night. At first we had a hard time coming up with a good concept but we had an inspiration in mind. A youtuber, named BenTK, makes cool looking videos with amzing transitions. This became our groundwork on what kind of teaser we would want to create.</p>
+                        <p>Our concept was simple. Our main character has a vision of going and enrolling in Statefields School. In this vision he got to see and experience the wonders and joys of film making with his groupmates.</p>
+                        <p>This certainly took a while to make. I wouldn't have done it without the help of my groupmates and those who help in creating this video. I also had fun editing this and would even go as far as to call it one of my greatest works so far. </p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download Video</a></p>
                       </div>
                     </div>
                   </div>
                   <div data-category="websites" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="{% static 'img/portfolio-3.jpg' %}" alt="" class="img-fluid">
+                    <div class="reference"><a href="#"><img src="{% static 'img/tool/notes.jpg' %}" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
-                            <h3 class="h4 reference-title">Project name 3</h3>
-                            <p>Short project description goes here...</p>
+                            <h3 class="h4 reference-title">Online Tool Web App</h3>
+                            <p>Web App created to aid in my online learning setup</p>
                           </div>
                         </div></a>
-                      <div data-images="{% static 'img/main-slider1.jpg' %},{% static 'img/main-slider2.jpg' %},{% static 'img/main-slider3.jpg' %}" class="sr-only reference-description">
-                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      <div dat-type="img" data-images="{% static 'img/tool/tool-dash.png' %},{% static 'img/tool/tool-notes.png' %},{% static 'img/tool/tool-sched.png' %}" class="sr-only reference-description">
+                        <p>Creating this Online Tool was just something that inspired me after seeing the app Notion. While it may seem senseless and tiring for some by creating a tool that you won't know if it'll work or not, not for me. Knowing that I might be the only person who'll get affected if my program goes wrong is good enough. If anything, it serves as an inspiration for me to do well and perfect it as fast as possible.</p>                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p>I had my fair share of troubles when creating this web app. It was hard since I had to code the logic and mechanics of note taking from scratch. I also learned in creating basic databases using Django, a python framework used as a backed for websites. In the end it was fun and I certainly hope that one day this gets finished and that I'd be able to share it to other people.</p>
+                        <p class="buttons text-center"><a href="http://otw.pythonanywhere.com/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="https://github.com/TheSciCoder3000/Online-Tools" class="btn btn-outline-primary"><i class="fa fa-download"></i> View Github Code</a></p>
                       </div>
                     </div>
                   </div>
                   <div data-category="filming" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="{% static 'img/portfolio-4.jpg' %}" alt="" class="img-fluid">
+                    <div class="reference"><a href="#"><img src="{% static 'img/tula/virus.png' %}" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
-                            <h3 class="h4 reference-title">Project name 4</h3>
-                            <p>Short project description goes here...</p>
+                            <h3 class="h4 reference-title">Panahon ng Pandemya, Buahy na Minema</h3>
+                            <p>A Grade 12 Tula video for the Filipino Subject</p>
                           </div>
                         </div></a>
-                      <div data-images="{% static 'img/main-slider1.jpg' %},{% static 'img/main-slider2.jpg' %},{% static 'img/main-slider3.jpg' %}" class="sr-only reference-description">
-                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      <div dat-type="video" data-images="tula" class="sr-only reference-description">
+                        <p>I enjoyed creating this video. Honestly took a while to get it done but it's not like there's anything new there. I'm honestly not good when it comes to making poems or any literature for that matter. But one thing I can at least make up for is for my skills and passion in filming and adding VFX to my videos. When it comes to editing, I'd stop sleeping to get the work done if I have to.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download Video</a></p>
                       </div>
                     </div>
                   </div>
                   <div data-category="competitions" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="{% static 'img/portfolio-5.jpg' %}" alt="" class="img-fluid">
+                    <div class="reference"><a href="#"><img src="{% static 'img/competitions/MOS.jpg' %}" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
-                            <h3 class="h4 reference-title">Project name 5</h3>
-                            <p>Short project description goes here...</p>
+                            <h3 class="h4 reference-title">MOS World Competition</h3>
+                            <p>Microsoft Office Specialist Competition in MS Excel</p>
                           </div>
                         </div></a>
-                      <div data-images="{% static 'img/main-slider1.jpg' %},{% static 'img/main-slider2.jpg' %},{% static 'img/main-slider3.jpg' %}" class="sr-only reference-description">
-                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      <div dat-type="img" data-images="{% static 'img/competitions/cert.jpg' %}" class="sr-only reference-description">
+                        <p>I was invited by Ms. Jay-Ann to particpate in this MOS world competition. I was honestly intrigued and wanted to try it out. I chose MS Excel since I've dabbled into it when I was designing a registrar system using the MS Excel software. The MOS World competition is a world wide event organized by Certiport. A representative would be chosen for each country and would participate on the upcoming National Competitions in California, USA.</p>
+                        <p>I decided to participate in the training program conducted there for 4 weeks. After that, we took the certification program needed before we can actually participate in the following competitions that will decide the representative of the country. I manage to pass with high scores and chosen to take the next upcoming competitions.</p>
+                        <p>Sadly due to the Pandemic, the events and competition got cancelled and my goal of going to California for free ended.</p>
                       </div>
                     </div>
                   </div>
                   <div data-category="filming" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="{% static 'img/portfolio-6.jpg' %}" alt="" class="img-fluid">
+                    <div class="reference"><a href="#"><img src="{% static 'img/DRRR/quake.jpg' %}" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
-                            <h3 class="h4 reference-title">Project name 6</h3>
-                            <p>Short project description goes here...</p>
+                            <h3 class="h4 reference-title">DRRR Earthquake PT</h3>
                           </div>
                         </div></a>
-                      <div data-images="{% static 'img/main-slider1.jpg' %},{% static 'img/main-slider2.jpg' %},{% static 'img/main-slider3.jpg' %}" class="sr-only reference-description">
+                      <div dat-type="video" data-images="DRRR" class="sr-only reference-description">
                         <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
                         <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download Video</a></p>
                       </div>
                     </div>
                   </div>
                   <div data-category="filming" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/portfolio-8.jpg" alt="" class="img-fluid">
+                    <div class="reference"><a href="#"><img src="{% static 'img/chem/chem.jpg' %}" alt="" class="img-fluid">
                         <div class="overlay">
                           <div class="inner">
-                            <h3 class="h4 reference-title">Project name</h3>
+                            <h3 class="h4 reference-title">Chemistry Video</h3>
                             <p>Short project description goes here...</p>
                           </div>
                         </div></a>
-                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                      <div dat-type="video" data-images="chem" class="sr-only reference-description">
                         <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
                         <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download Video</a></p>
                       </div>
                     </div>
                   </div>
@@ -284,7 +293,7 @@
         </div>
       </div>
     </section>
-    <!-- Testimonials-->
+    <!-- Testimonials
     <section id="testimonials" class="testimonials-section bg-gray">
       <div class="container">
         <header class="text-center mb-2">
@@ -365,32 +374,27 @@
         </ul>
       </div>
     </section>
+    -->
     <!-- Statistics-->
     <section id="statistics" data-dir="up" style="background: url(&quot;img/parallax.jpg&quot;);" class="statistics-section text-white parallax parallax">
       <div class="container">
         <div class="row showcase text-center">
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+          <div data-animate="fadeInUp" class="col-lg-4 col-md-6">
             <div class="item">
               <div class="icon"><i class="fa fa-align-justify"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">120</span><br>Websites</h5>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">3</span><br>Websites</h5>
             </div>
           </div>
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
-            <div class="item">
-              <div class="icon"><i class="fa fa-users"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">50</span><br>Satisfied Clients</h5>
-            </div>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+          <div data-animate="fadeInUp" class="col-lg-4 col-md-6">
             <div class="item">
               <div class="icon"><i class="fa fa-copy"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">320</span><br>Projects</h5>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">7</span><br>Projects</h5>
             </div>
           </div>
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+          <div data-animate="fadeInUp" class="col-lg-4 col-md-12">
             <div class="item">
               <div class="icon"><i class="fa fa-font"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">333</span><br>Magazines and Brochures</h5>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">4</span><br>Film and Videos</h5>
             </div>
           </div>
         </div>
